@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <exception>
 #include <unordered_map>
 std::unordered_map<std::string, double> table;
 

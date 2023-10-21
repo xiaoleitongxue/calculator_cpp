@@ -4,7 +4,7 @@ int main(){
     char ch;
 
     std::istream* ip = &std::cin;
-    double num;
+    std::string num;
     do{
         if(!ip -> get(ch)) return 0;
         std::cout << ch << std::endl;
