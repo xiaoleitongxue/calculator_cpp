@@ -218,9 +218,10 @@ Token Token_stream::get()
     default:
         if (isalpha(ch))
         {
-            char string_value = ch;
+            ct.string_value = "";
+            ct.string_value.push_back(ch);
             while(ip -> get(ch) && isalnum(ch))
-                string_value += ch;
+                ct.string_value += ch;
             ip -> putback(ch);
             ct.kind = Kind::name;
             return ct;
